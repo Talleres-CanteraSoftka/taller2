@@ -55,9 +55,9 @@ public abstract class Spacecraft {
 
     /**
      *
-     * SpacecraftType is the type of spacecraft the users can build, this includes a short description of their unique qualities
+     * SpacecraftDescription this method provides a short description of the spacecraft
      */
-    public abstract String SpacecraftType();
+    public abstract String SpacecraftDescription();
 
 
 }

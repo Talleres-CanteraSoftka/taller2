@@ -33,7 +33,7 @@ public class ShuttleVehicles extends Spacecraft{
      * this method assigns a type to the spacecraft
      */
     @Override
-    public String SpacecraftType() {
+    public String SpacecraftDescription() {
         System.out.println("This spacecraft is of the Shuttle Vehicles type, which is used to launch a payload into space");
         return "";
     }

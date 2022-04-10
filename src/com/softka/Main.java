@@ -9,7 +9,7 @@ import java.util.Scanner;
  * while (!exit) brings the menu again after we create a spacecraft.
  * switch (option) gives different options to the users to choose what type of spacecraft they want to build.
  * default gives a message telling the user to write a different number.
- * catch helps us to avoid the program to crach in case the users enter a letter or something different than a number
+ * catch helps us to avoid the program to crash in case the users types a letter or something different from a number
  */
 public class Main {
     public static void main(String[] args) {
@@ -18,15 +18,15 @@ public class Main {
         int option;
         Spacecraft ship1 = new MannedSpacecraft() {
         };
-        Spacecraft ship2 = new MannedSpacecraft() {
+        Spacecraft ship2 = new ShuttleVehicles() {
         };
-        Spacecraft ship3 = new MannedSpacecraft() {
+        Spacecraft ship3 = new UnmannedSpacecraft() {
         };
-        Spacecraft ship4 = new MannedSpacecraft() {
+        Spacecraft ship4 = new HybridMannedShuttleVehicles() {
         };
         while (!exit) {
             System.out.println(" Welcome to Spacecraft builder, below you can select the number of the spacecraft you want to create");
-            System.out.println("1. MannedSpacecraft");
+            System.out.println("1. Manned Spacecraft");
             System.out.println("2. Shuttle Vehicles");
             System.out.println("3. UnmannedSpacecraft");
             System.out.println("4. Hybrid Manned Shuttle Vehicles");

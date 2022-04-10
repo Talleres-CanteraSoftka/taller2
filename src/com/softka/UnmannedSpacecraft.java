@@ -31,7 +31,7 @@ public class UnmannedSpacecraft extends Spacecraft {
      * this method overrides the type of the spacecraft
      */
     @Override
-    public String SpacecraftType() {
+    public String SpacecraftDescription() {
         System.out.println("This spacecraft is of the Unmanned Spacecraft type, which are generally used to study celestial bodies");
         return "";
     }

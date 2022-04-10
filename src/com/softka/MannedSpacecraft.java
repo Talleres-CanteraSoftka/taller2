@@ -31,7 +31,7 @@ public class MannedSpacecraft extends Spacecraft {
      * this method overrides the type of the spacecraft
      */
     @Override
-    public String SpacecraftType() {
+    public String SpacecraftDescription() {
         System.out.println("This spacecraft is of the Shuttle Vehicles type, which is used to launch a payload into space");
         return null;
     }
