@@ -1,28 +1,42 @@
 package com.softka;
-// tipo de combustilbe combustible químico sólido o bien propelente líquido, o ambos
-// podía transportar 100 toneladas,
-// y tenía un empuje de 3060 toneladas.
-// medía 60 metros
-// pesaba 2400 toneladas
+
+/**
+ * ShuttleVehicles is a class used to build spacecrafts of this type
+ */
 public class ShuttleVehicles extends Spacecraft{
-    public ShuttleVehicles(int weight, float thrust, int crewSize) {
-        super(2400, 3060, 4);
+
+
+    /**
+     * is the constructor used in main
+     * weight is the weight assigned to this type of spacecraft
+     * thrust is the thrust assigned to this type of spacecraft
+     * crewSize is the crew size available to this type of spacecraft
+     */
+    public ShuttleVehicles() {
+        this.weight = 2400;
+        this.thrust = 3060;
+        this.crewSize = 4;
     }
 
+    /**
+     *
+     * this method overrides the fuel type of this spacecraft
+     */
     @Override
     public String fuelType() {
-        System.out.println("Esta nave espacial usa combustible químico sólido, propelente líquido, o ambos");
+        System.out.println("This spacecraft uses solid chemical fuel, liquid propellant, or both.");
         return "";
     }
 
+    /**
+     *
+     * this method assigns a type to the spacecraft
+     */
     @Override
     public String SpacecraftType() {
-        System.out.println("Esta nave espacial es del tipo Shuttle Vehicles, que sirve para lanzar una carga útil al espacio");
+        System.out.println("This spacecraft is of the Shuttle Vehicles type, which is used to launch a payload into space");
         return "";
     }
-    public String LoadCapacity(){
-        System.out.println( "Esta nave espacial tiene una capacidad de carga de 100 toneladas");
-        return "";
-    }
+
 
 }

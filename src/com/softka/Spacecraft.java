@@ -2,38 +2,60 @@ package com.softka;
 
 /**
  * weight is the weight of the spacecraft in kilograms
+ * name is the name of the spacecraft assigned by the users
  * thrust is the thrust of the spacecraft expressed in tons
+ * crewsize is the number of astronauts that can board the spacecraft
  */
 public abstract class Spacecraft {
-    private int weight;
+    int weight;
     private String name;
-    private float thrust;
-    private int crewSize;
+    float thrust;
+    int crewSize;
 
+    /**
+     *
+     * @param weight is the weight of each type of ship
+     * @param thrust
+     * @param crewSize
+     */
     public Spacecraft(int weight, float thrust, int crewSize) {
         this.weight = weight;
         this.thrust = thrust;
         this.crewSize = crewSize;
     }
 
+    /**
+     * this is the constructor used id main to create spacecrafts
+     */
+    public Spacecraft() {
 
+    }
+
+    /**
+     *
+     * @return name, returns the name assigned by the users after creating a ship.
+     */
     public String getName() {
         return name;
     }
 
+    /**
+     *
+     * @param name lets the user assign a name to their spacecrafts
+     */
     public void setName(String name) {
         this.name = name;
     }
+
     /**
      *
-     * String SpacecraftType es el metodo para establecer el tipo de combustible, este es un
-     * metodo abastracto debido a que algunos tipos de naves espaciales tienen varios tipos de combustible y otros solo uno.
+     * fuelType is the fuel type or method of energy generation used by each spacecraft
      */
     public abstract String fuelType();
 
     /**
      *
-     * SpacecraftType es el tipo de nave espacial que se usara para constuir la nave espacial en Main
+     * SpacecraftType is the type of spacecraft the users can build, this includes a short description of their unique qualities
      */
     public abstract String SpacecraftType();
 
